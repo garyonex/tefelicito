@@ -1,0 +1,127 @@
+*{
+	margin: 0;
+	padding: 0
+	;
+}
+
+
+body{
+	background-color: pink;
+}
+
+.contenedor{
+	display: grid;
+	grid-template-columns: 10fr 1fr  ;
+	grid-template-rows: 1fr 1fr 6fr;
+
+}
+.cont-item:first-child{
+	background-color: yellow;
+	grid-column: 1 / 3;
+	background-color: #7ee8fa;
+	background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);	
+	margin: 1px 0 1px 0;
+	font-size: 50px;
+	letter-spacing: 1.14px;
+	font-weight: bold;
+	
+}
+
+.contenedor div{
+	background: yellow;
+	margin: 80px 20px 20px 20px;
+	padding: 10x;
+	color: #6b0f1a;
+	background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
+;	
+}
+.contenedor div p{
+	color: whitesmoke;
+	font-weight: bold;
+	padding: 10px;
+	text-align: stard;
+	font-size: 20px;
+
+}
+
+.cont-item{
+	text-align: center;
+	background-color: #7ee8fa;
+	background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);	
+	margin: 10px 0 10px 0;
+
+}
+
+.grande{
+	font-size: 80px;
+	padding: 2px;
+	margin: 2px;
+	text-shadow: 2px 2px 4px pink;;
+}
+img{
+	margin: 3em;
+	padding: auto;
+	justify-content: ceter;
+}
+@media only screen (max-width: 60em) {
+  img{
+  	width: 424px;
+  	height: 320px;
+  }
+  
+}
+
+
+.text-container {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.text-container h2 {
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.text-container .text-gradient {  
+  color: transparent;
+  background-image: linear-gradient(to left, yellow, #7B68EE, #3498db, #2ecc71, gree);
+   webkit-background-clip: text;
+    background-clip: text;
+  animation: color 3s linear infinite; 
+  background-size: 500%;  
+  -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+}
+
+.text-container .text-pattern {  
+  color: transparent;
+  background-color: #DC143C;
+  background-image: repeating-linear-gradient(30deg,    transparent, transparent 25px,        rgba(255,255,255,.5) 25px, rgba(255,255,255,.5) 50px);
+   -webkit-background-clip: text;
+    background-clip: text;   
+  animation: color 50s linear infinite; 
+  background-size: 200%;  
+  -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+}
+
+@keyframes color {
+  from { 
+    background-position: 0% 50%;
+  }
+  to { 
+    background-position: 100% 50%; 
+  }
+}
+
+.text-container{
+	position: fixed;
+	width: 100vw;
+
+}
+.ico{
+	width: 40px;
+	height: 40px;
+	margin-left: 20px;
+}
+
